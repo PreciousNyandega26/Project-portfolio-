@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/34bcb3181b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+          <nav>
+            <img src="images/POLICAP.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p>LOGISTICS & MATERIAL SPECIALIST | OPTIMIZING AGGREGATE SUPPLY</p>
+            <h1>Hi, I'm <span>Policap</span><br>From Kenya</h1>
+          </div>
+        </div>
+        <!-- ---about section--- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/profile.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello,I'm Policap Onchiri owner of Poliribi Investment Limited with over 8 years in the aggregate supply industry, I specialize in the strategic sourcing and distribution of high-quality construction materials-from crashed stone and gravel to specialized sands.I bridge the gap between raw material production and large-scale infrastructure needs, ensuring that projects have exactly what they need,exactly when they need it.</p>
+
+                       <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Material knowledge.</span><br>Different types and grades of aggregates is crucial.</li>
+                            <li><span>Equipment Operation</span><br>Proficiency in operating heavy machineries such as exacavators,loaders,crushers and dump trucks.</li>
+                            <li><span>Logistics and supply chain management.</span><br>Optimization of delivery routes,inventory tracking and managing transport vehicles for timely delivery.</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Strategic outsourcing</span><br>Expertise in identifying and partnering with key suppliers to enhance service delivery.</li>
+                            <li><span>Project management</span><br>Proven ability to manage multiple projects simultaneously, ensuring timely delivery and adherence to budget.</li>
+                            <li><span>Client relationship management</span><br>Skilled in building and maintaining strong relationships with clients to foster repeat business.</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor's Degree in Supply Chain Management</span><br>University of Nairobi, 2015</li>
+                            <li><span>Certified Supply Chain Professional (CSCP)</span><br>APICS, 2016</li>
+                            <li><span>Diploma in Logistics and Transport</span><br>Kenya Institute of Management, 2014</li>
+                        </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--services-->
+        <div id="services">
+            <div class="container">
+              <h1 class="sub-title">My Services</h1>
+              <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-docker" style="color: #bf9166;"></i>
+                    <h2>Material Sourcing</h2>
+                    <p>Expertise in sourcing high-quality aggregates from reliable suppliers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-truck-fast" style="color: #bf9166;"></i>
+                    <h2>Logistics Management</h2>
+                    <p>Efficient management of transportation and delivery of materials to site.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-algolia" style="color: #bf9166;"></i>
+                    <h2>Project Consultation</h2>
+                    <p>Consultation services for optimal material selection and usage.</p>
+                    <a href="#">Learn more</a>
+                </div>
+              </div>  
+            </div>
+        </div>
+
+        <!--Portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/samplework2.jpg">
+                        <div class="layer">
+                            <h3>Aggregates Processing</h3>
+                            <p>High-quality crushed stone and gravel processed and screened for construction projects.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: white;"></i></a>
+                        </div>  
+                    </div>
+                    <div class="work">
+                        <img src="images/samplework.jpg">
+                        <div class="layer">
+                            <h3>On-site Delivery & Placement</h3>
+                            <p>Coordinated deliveries and placement services to keep projects on schedule and on budget.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: white;"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/quarry.jpg">
+                        <div class="layer">
+                            <h3>Quarry Operations</h3>
+                            <p>Responsible extraction and quality control at source to ensure consistent material specifications.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: white;"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/transport.jpg">
+                        <div class="layer">
+                            <h3>Transport & Fleet Management</h3>
+                            <p>Optimized routing and fleet coordination for timely, cost-effective deliveries across regions.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: white;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!--contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>policaponchiri@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0704723066</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/share/1CpgAwxwQz/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/policaponchiri?igsh=YXQwOWVxNDIraTNK"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://vm.tiktok.com/ZMHoL8sPFDCX1-uGdo6/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://x.com/NdubOnchiri"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 Policap Onchiri. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
